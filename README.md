@@ -1,8 +1,8 @@
-# science2service-management-workshop
-Science2Service week, Data Management training
+# Science2Service data management
 
+Welcome to the data management session!
 
-## Usage
+## Preparations
 
 Kickstart your own Python environment with the following commands.
 
@@ -17,6 +17,10 @@ Kickstart your own Python environment with the following commands.
 0. Source your Python virtual environment. **PS!** Do this in every new terminal window you want to use this virtual environment.
     ```bash
     source ~/v/dataman/bin/activate
+    ```
+0. Upgrade pip package to latest version to avoid unnecessary errors during installation of requirements.
+    ```bash
+    pip3 install --upgrade pip
     ```
 0. Install Python wheel package for downloading python pre-compiled libraries.
    ```bash
