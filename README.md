@@ -2,7 +2,7 @@
 Science2Service week, Data Management training
 
 
-## Useage
+## Usage
 
 Kickstart your own Python environment with the following commands.
 
