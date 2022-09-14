@@ -23,6 +23,6 @@ Kickstart your own Python environment with the following commands.
    pip3 install wheel
    ```
 0. Inastall this workshops Python requirements in your own environment.
-  ```bash
-  pip3 install -r requirements.txt
-  ```
+    ```bash
+    pip3 install -r requirements.txt
+    ```
