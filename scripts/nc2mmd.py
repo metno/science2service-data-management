@@ -46,6 +46,11 @@ def create_parser():
         '-c', '--checksum_calculation',  action='store_true',
         help="Toggle wether to calculate the checksum of the file"
     )
+    parser.add_argument(
+        '-k', '--check-only', action='store_true',
+        default=False,
+        help='Only check to nc to mmd conversion.'
+    )
 
     return parser
 
@@ -68,7 +73,7 @@ def main(args):
 
     for file in inputfiles:
         outfile = (args.output_dir / pathlib.Path(file).stem).with_suffix('.xml')
-        md = nc_to_mmd.Nc_to_mmd(str(file), output_file=outfile)
+        md = nc_to_mmd.Nc_to_mmd(str(file), output_file=outfile, check_only=args.check_only)
         md.to_mmd(
             add_wms_data_access=args.add_wms_data_access,
             checksum_calculation=args.checksum_calculation
