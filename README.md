@@ -238,7 +238,7 @@ AttributeError:
 ## Optional: setup a CSW test setup (beyond the scope of this course)
 
 1. First you need to install vagrant and virtualbox. This is the first two points as described here
-    ```http
+    ```plain
     https://gitlab.met.no/it/kurs/ansible-workshop/-/blob/master/PREP.md
     ```
     If you get into trouble see trouble shooting further down at this page.
@@ -255,7 +255,7 @@ AttributeError:
     ```
 
 0. Open a browser with the test CSW:
-    ```http
+    ```plain
     http://192.168.56.10/?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&typenames=csw:Record&resulttype=results
     ```
 
