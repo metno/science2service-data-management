@@ -237,7 +237,13 @@ AttributeError:
 
 ## Optional: setup a CSW test setup (beyond the scope of this course)
 
-1. Clone repo
+1. First you need to install vagrant and virtualbox. This is the first two points as described here
+    ```http
+    https://gitlab.met.no/it/kurs/ansible-workshop/-/blob/master/PREP.md
+    ```
+    If you get into trouble see trouble shooting further down at this page.
+
+0. Clone repo
     ```bash
     git clone https://github.com/metno/vagrant-s-enda.git
     ```
@@ -255,6 +261,7 @@ AttributeError:
 
 0. Send your MMD file to the CSW catalog via the DMCI:
     ```bash
+    curl --data-binary @test-dataset.xml http://192.168.56.10:8000/v1/insert
     ```
 
 
