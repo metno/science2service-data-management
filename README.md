@@ -226,6 +226,14 @@ Should give you an MMD xml file `test-dataset.xml`
 </mmd:mmd>
 ```
 
+0. Validate your MMD xml at the DMCI endpoint
+```bash
+curl --data-binary @test-dataset.xml  https://dmci-dev.s-enda.k8s.met.no/v1/validate
+```
+
+This will unfortunately fail. We are working on fixing this.
+The soulution now is to edit the second line in the MMD xml file and remove
+the prefix to the uuid `no.met:`
 ## Optional: setup a CSW test setup (beyond the scope of this course)
 
 1. Clone repo
@@ -243,6 +251,9 @@ vagrant up
 ```http
 http://192.168.56.10/?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&typenames=csw:Record&resulttype=results
 ```
+
+0. Send your MMD file to the CSW catalog via the DMCI:
+```bash
 
 <!---
 vim: set spell spelllang=en:

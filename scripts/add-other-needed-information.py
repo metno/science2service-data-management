@@ -65,6 +65,7 @@ with nc.Dataset(sys.argv[1], "a") as f:
     f.institution = 'Norwegian Meteorological Institute'
     f.institution_short_name = 'METNO'
     f.project = 'Govermental core service'
+    f.project_short_name = 'Govermental core service'
 
     # MMD mandatory not in ACDD
     f.metadata_status = 'Active'
